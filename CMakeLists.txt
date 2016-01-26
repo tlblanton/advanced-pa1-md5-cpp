@@ -3,5 +3,5 @@ project(pa1_md5)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp pa1md5.cpp)
 add_executable(pa1_md5 ${SOURCE_FILES})

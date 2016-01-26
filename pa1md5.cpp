@@ -30,7 +30,7 @@ int main(int argc, char * argv[])
         for(int i = 0; i < N; ++i)
         {
             if(i == 0 || i == N-1)
-            cout << "TEST<" << i+1 << ">" << endl;
+                cout << "TEST<" << i+1 << ">" << endl;
         }
 
     }
