@@ -8,7 +8,6 @@
  * Date Due: February 9, 2016
  * repository url: https://github.com/tlblanton/pa1md5_cpp.git
  */
-//TODO there is a difference in the wiki pages results and mine, but only slightly. Find put why this is.
 
 #include <iostream>
 #include <iomanip>
@@ -20,7 +19,6 @@ using namespace std;
 int main(int argc, char * argv[])
 {
     // if there are no command line arguments then the program reads in a single line of input (from the bottom of the wiki article),
-    // hashes it then outputs the completed hash
     if(argc == 1)
     {
         char hashStr[MAX_MD5_SIZE];
@@ -54,7 +52,7 @@ int main(int argc, char * argv[])
 
             if(i == 0 || i == N-1)
             {
-                cout << hashStr;
+                cout << setw(17) << setfill(' ') << std::left << hashStr;
                 for (int j = 0; j < 16; ++j)
                 {
                     cout << std::hex << setfill('0') << setw(2) << (int) result[j];
