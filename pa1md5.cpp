@@ -57,7 +57,7 @@ int main(int argc, char * argv[])
                 cout << hashStr;
                 for (int j = 0; j < 16; ++j)
                 {
-                    cout << std::hex <<setfill('0') << setw(2) << (int) result[j];
+                    cout << std::hex << setfill('0') << setw(2) << (int) result[j];
                 }
                 cout << std::dec << endl;
             }
